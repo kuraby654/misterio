@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acceso</title>
+    <style>
+        body {
+            background:black;
+            color:lime;
+            font-family:monospace;
+            text-align:center;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ACCESO RESTRINGIDO</h1>
+<p>Solo aquellos que entienden podrán avanzar...</p>
+
+<input type="text" id="clave" placeholder="Ingresa la clave">
+<br><br>
+<button onclick="check()">Entrar</button>
+
+<script>
+function check(){
+  let c = document.getElementById("clave").value.toLowerCase();
+
+  if(c === "silencio"){
+    window.location="nivel2.html";
+  } else {
+    alert("Clave incorrecta");
+  }
+}
+
+// pista oculta 😈
+console.log("Nada es lo que parece...");
+</script>
+
+</body>
+</html>
